@@ -6,17 +6,14 @@ body {
   align-items: center;
   height: 100vh;
   color: #493240;
-  background: #ff0099; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to top,
-    #493240,
-    #ff0099
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to top,
-    #493240,
-    #ff0099
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  transition: all 300ms ease;
+}
+
+html {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .card {
@@ -25,6 +22,47 @@ body {
   border-radius: 6px;
   box-shadow: 4px 4px #141e30;
   background: #fff;
+}
+
+.nav {
+  color: #fff;
+  padding-left: 200px;
+}
+
+.about-bg {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.home-bg {
+  background: #009fff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ec2f4b,
+    #009fff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ec2f4b,
+    #009fff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.prose {
+  margin-left: 200px;
+  margin-right: 200px;
+  font-size: 24px;
+  color: #fff;
+  text-justify: newspaper;
 }
 
 .dark {
@@ -43,7 +81,7 @@ body {
 }
 
 .dark > .card > a {
-  color: aqua;
+  color: #009fff;
 }
 
 .dark > .card {
@@ -52,7 +90,7 @@ body {
 }
 
 .socials {
-  padding: 24px 24px;
+  padding: 24px;
 }
 
 img {
@@ -67,7 +105,15 @@ a {
 }
 
 #twitter {
-  color: #00acee;
+  color: #555555;
+}
+
+#github {
+  color: #555555;
+}
+
+#email {
+  color: #555555;
 }
 
 .form {
